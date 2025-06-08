@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap');
+
+:root {
+  --font-family: 'Futura PT', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}

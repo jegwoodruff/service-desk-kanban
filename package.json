@@ -1,0 +1,58 @@
+{
+  "name": "service-desk-kanban",
+  "version": "1.0.0",
+  "description": "A service desk Kanban tool with email-to-task integration and SLA management",
+  "main": "server.js",
+  "homepage": "https://jackwoodruff.github.io/service-desk-kanban",
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
+    "axios": "^1.6.7",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "sqlite3": "^5.1.7",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "^9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
