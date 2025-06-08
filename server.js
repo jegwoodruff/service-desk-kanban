@@ -196,9 +196,10 @@ const port = process.env.PORT || 3001;
 
 // CORS configuration
 app.use(cors({
-  origin: ['https://jackwoodruff.github.io'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: ['https://jegwoodruff.github.io'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  credentials: true
 }));
 
 // Serve static files from the React app
