@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/service-desk-kanban/static/js/main.7f8b0b52.js",
+    "index.html": "/service-desk-kanban/index.html",
+    "main.7f8b0b52.js.map": "/service-desk-kanban/static/js/main.7f8b0b52.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7f8b0b52.js"
+  ]
+}
