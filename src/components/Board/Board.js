@@ -44,7 +44,7 @@ const Board = ({ dashboardId }) => {
     }
 
     try {
-      const response = await axios.post('https://your-heroku-app.herokuapp.com/api/tasks', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks`, {
         title: newTaskTitle,
         description: newTaskDescription,
         priority: newTaskPriority,
