@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: service-desk-kanban
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: DATABASE_URL
+        value: sqlite:///database.db
+      - key: JWT_SECRET
+        value: your-secret-key-here
+      - key: EMAIL_USER
+        value: your-email@example.com
+      - key: EMAIL_PASS
+        value: your-email-password
